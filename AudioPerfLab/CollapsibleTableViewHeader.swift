@@ -91,9 +91,7 @@ class CollapsibleTableViewHeader: UIView {
   }
 
   private static func font() -> UIFont {
-    let settings: [[UIFontDescriptor.FeatureKey: Int]] = [
-      [.featureIdentifier: kUpperCaseType, .typeIdentifier: kUpperCaseSmallCapsSelector],
-      [.featureIdentifier: kLowerCaseType, .typeIdentifier: kLowerCaseSmallCapsSelector]]
+    let settings: [[UIFontDescriptor.FeatureKey: Int]] = []
     let descriptor = UIFont.systemFont(ofSize: 19.0, weight: .light)
       .fontDescriptor.addingAttributes([.featureSettings: settings])
     return UIFont(descriptor: descriptor, size: descriptor.pointSize)
